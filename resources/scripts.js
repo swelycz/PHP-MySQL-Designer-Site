@@ -1,0 +1,25 @@
+$(document).ready(function(){
+		$(document).click(function(){
+				$('#loginBox').css({'visibility':'hidden'});
+				$('#loginBox').css({'opacity':'0'});
+				$('#loginBox').css({'width':'400px'});
+				$('#loginContainer').css({'background-color':''});
+				$('#loginContainer').css({'width':''});
+				$('#signupContainer').css({'width':''});
+		});
+		$('#loginContainer').click(function(event){
+			$('#loginContainer').css({'background-color':'#333333'});
+			$('#loginContainer').css({'width':'170px'});
+			$('#signupContainer').css({'width':'170px'});
+			$('#loginBox').css({'width':'400px'});
+			$('#loginBox').css({'visibility':'visible'});
+			$('#loginBox').css({'opacity':'1'});
+			event.stopPropagation();
+		});
+		$('#loginBox').click(function(event){
+			$('#loginBox').css({'visibility':'visible'});
+			$('#loginBox').css({'opacity':'1'});
+			$('#loginContainer').css({'background-color':'#333333'});
+			event.stopPropagation();
+		});
+});

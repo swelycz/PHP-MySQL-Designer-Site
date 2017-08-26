@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url("images/homepageInterior.jpg") no-repeat 100%;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+}
+/* --- Header ---*/
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background: rgba(0,0,0,0.7);
+  z-index: 50;
+}
+#header {
+  width: 1300px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -650px;
+  position: absolute;
+}
+.titleContainer:hover {
+  letter-spacing: 12px;
+}
+.titleContainer {
+  width: 100%;
+  height: 60%;
+  background-color: #222222;
+  color: #FFFFFF;
+  font-family: 'Arimo';
+  font-size: 35px;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 8px;
+  position: relative;
+  -webkit-transition: all 0.75s;
+  transition: all 0.75s;
+}
+  /* --- NAV --- */
+  .navContainer {
+    background-color: #222222;
+    width: 100%;
+    height: 40%;
+  }
+  nav {
+    margin: 0 auto;
+    height: 100%;
+    width: 60%;
+    float: left;
+    font-family: 'Arimo';
+    font-size: 12px;
+    text-align: center;
+    display: table;
+  }
+  nav ul:hover {
+    background-color: #333333;
+  }
+  nav ul {
+    display: table-cell;
+    float: left;
+    width: 33.33%;
+    height: 40px;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: "Arimo";
+    letter-spacing: 6px;
+    line-height: 40px;
+    cursor: default;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  nav ul:before, nav ul:after {
+  	position: absolute;
+    opacity: 0;
+    width: 2px;
+    height: 0;
+    content: '';
+    background: #FFFFFF;
+    bottom: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  nav ul:before {
+  	left: 0;
+  }
+  nav ul:after {
+  	right: 0;
+  }
+  nav ul:hover:before, nav ul:hover:after {
+  	opacity: 1;
+    height: 100%;
+  }
+  nav ul:hover li {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav ul li:hover {
+    background-color: #444444;
+  }
+  nav ul li {
+   visibility: hidden;
+   opacity: 0;
+   position: relative;
+   width: 100%;
+   height: 40px;
+   list-style: none;
+   background-color: #333333;
+   -webkit-transition: all 0.3s;
+   transition: all 0.3s;
+  }
+  nav ul li a {
+  color: #FFFFFF;
+  font-family: "Arimo";
+  font-size: 13px;
+  letter-spacing: 3px;
+  line-height: 40px;
+  text-decoration: none;
+}
+  ul li:before, ul li:after {
+  	position: absolute;
+    opacity: 0;
+    width: 2px;
+    height: 0;
+    content: '';
+    background: #FFF;
+    bottom: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  ul li:before {
+  	left: 0;
+  }
+  ul li:after {
+  	right: 0;
+  }
+  ul li:hover:before, ul li:hover:after {
+  	opacity: 1;
+    height: 100%;
+  }
+  /* --- Log/Sign In ---*/
+  #logSignContainer {
+    height: 100%;
+    text-align: center;
+    float: right;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #loginContainer:hover {
+	background-color: #333333;
+  }
+  #loginContainer:active {
+  	background-color: #444444;
+  	-webkit-transition: background-color 0s, opacity 0s;
+  	transition: background-color 0s, opacity 0s;
+  }
+  #loginContainer {
+    width: auto;
+  	height: 100%;
+  	float: left;
+  	background-color: #222222;
+  	text-align: center;
+  	line-height: 40px;
+    padding: 0 15px;
+  	position: relative;
+  	cursor: pointer;
+    color: #FFFFFF;
+    font-family: "Arimo";
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  }
+  #signupContainer:hover {
+  	background-color: #333333;
+  }
+  #signupContainer:active {
+    background-color: #444444;
+    -webkit-transition: background-color 0s, opacity 0s;
+    transition: background-color 0s, opacity 0s;
+  }
+  #signupContainer {
+  	background-color: #222222;
+    width: auto;
+  	height: 100%;
+  	float: left;
+  	text-align: center;
+  	line-height: 40px;
+  	position: relative;
+  	cursor: pointer;
+    padding: 0 15px;
+    font-family: "Arimo";
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  }
+  #signupContainer a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  div#signupContainer:before, div#signupContainer:after {
+  	position: absolute;
+      opacity: 0;
+      width: 2px;
+      height: 0;
+      content: '';
+      background: #FFF;
+      bottom: 0px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  div#signupContainer:before {
+  	left: 0px;
+  }
+  div#signupContainer:after {
+  	right: 0px;
+  }
+  div#signupContainer:hover:before, div#signupContainer:hover:after {
+  	opacity: 1;
+      height: 100%;
+  }
+  header div#loginContainer:before, header div#loginContainer:after {
+  	position: absolute;
+      opacity: 0;
+      width: 2px;
+      height: 0;
+      content: '';
+      background: #FFF;
+      bottom: 0px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  header div#loginContainer:before {
+  	left: 0px;
+  }
+  header div#loginContainer:after {
+  	right: 0px;
+  }
+  header div#loginContainer:hover:before, header div#loginContainer:hover:after {
+  	opacity: 1;
+      height: 100%;
+  }
+  #loginBox {
+  	width: 400px;
+  	height: 170px;
+  	background-color: #333333;
+  	position: fixed;
+  	margin-left: 900px;
+  	opacity: 0;
+  	visibility: hidden;
+  	z-index: 5;
+  	font-size: 16px;
+  	color: #FFFFFF;
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
+  }
+  #loginBox form {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 41px;
+    color: #FFFFFF;
+    font-family: "Arimo";
+  }
+  #loginBox form input {
+    float: right;
+    font-size: 14px;
+    font-family: "Arimo";
+  }
+  #loginBox form button {
+    width: 60px;
+    height: 30px;
+    margin-top: 2px;
+    float: right;
+  }
+  .loginInput {
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+/* --- Default Body ---*/
+.contentWrapper {
+  height: 90vh;
+  min-height: 500px;
+  padding-top: 100px;
+  position: relative;
+}
+.contentContainer {
+  position: absolute;
+  width: 1300px;
+  height: 90vh;
+  min-height: 500px;
+  background: rgba(68,68,68,0.8);
+  margin-left: -650px;
+  left: 50%;
+}
+.contentWrapper2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* --- Home Page ---*/
+.homeContainer {
+  width: 100%;
+  height: 500px;
+  background-color: #FFFFFF;
+
+  -webkit-box-shadow: 0 12px 5px -4px #222222;
+          box-shadow: 0 12px 5px -4px #222222;
+}
+.homeContainer h1 {
+  font-family: "Arimo";
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+}
+.homePictureContainer {
+  width: 92%;
+  height: 65%;
+  margin: 0 auto;
+}
+.homePictureContainer div {
+  float: left;
+  width: 24%;
+  margin-left: 1%;
+  height: 100%;
+  position: relative;
+  -webkit-box-shadow: inset 0 0 16px #000000;
+          box-shadow: inset 0 0 16px #000000;
+  background-position: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.homePicture1:hover {
+  background-size: 160% 120%;
+}
+.homePicture1 {
+  background: url("images/homepic1.jpg") no-repeat 100%;
+  background-size: 140% 100%;
+}
+.homePicture2:hover {
+  background-size: 140% 120%;
+}
+.homePicture2 {
+  background: url("images/homepic2.jpg") no-repeat 100%;
+  background-size: 120% 100%;
+}
+.homePicture3:hover {
+  background-size: 140% 120%;
+}
+.homePicture3 {
+  background: url("images/homepic3.jpg") no-repeat 100%;
+  background-size: 120% 100%;
+}
+.homePicture4:hover {
+  background-size: 200% 110%;
+}
+.homePicture4 {
+  background: url("images/homepic4.jpg") no-repeat 100%;
+  background-size: 180% 100%;
+}
+/* --- Signup Page ---*/
+.signupSpacer {
+  width: 100%;
+  height: 5%;
+}
+.signupFormContainer {
+  width: 60%;
+  height: 90%;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  font-family: "Arimo";
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 10px;
+}
+.signupTitle {
+  font-size: 40px;
+  letter-spacing: 6px;
+  text-decoration: underline;
+}
+.signupFormContainer form {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: left;
+}
+.signupFormContainer form input {
+  float: right;
+}
+.signupFormContainer form button {
+  width: 60px;
+  height: 30px;
+  margin-top: 2px;
+  float: right;
+}
+.formNotification {
+  font-size: 12px;
+  float: right;
+  margin-right: 120px;
+}
+/* --- User Page ---*/
+.userpageContainer {
+  width: 100%;
+  height: 80%;
+  background: rgba(0,0,0,0.8);
+}
+.userSectionOverlay:hover {
+  background: rgba(255,255,255,0.8);
+
+}
+.userSectionOverlay {
+  background: rgba(255,255,255,0.7);
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.userSection:hover .userSectionTitle {
+  padding-top: 25%;
+}
+.userSection:hover .userSectionOptionsContainer {
+  margin-top: 10%;
+}
+.userSection:hover .userSectionOptionsContainer {
+  opacity: 1;
+}
+.userSectionTitle {
+  text-align: center;
+  width: 100%;
+  padding-top: 40%;
+  font-size: 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.userSection {
+  width: 50%;
+  height: 100%;
+  color: #000000;
+  letter-spacing: 4px;
+  font-family: "Arimo";
+  float: left;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.userSectionOptionsContainer {
+  height: 30%;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5%;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.userSectionOption:hover {
+  background: rgba(255,255,255,1);
+}
+.userSectionOption {
+  height: 40%;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 3%;
+  position: relative;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: #FFFFFF solid 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.userSectionOptionText {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+.changeinfo {
+  background: url("images/userinfo.jpg") no-repeat 100%;
+  background-size: 100% 100%;
+}
+.messages {
+  background: url("images/messages.jpg") no-repeat 100%;
+  background-size: 160% 100%;
+  background-position: center;
+}
+/* --- Change Pass Page ---*/
+.changepassContainer {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background: rgba(0,0,0,0.8);
+}
+.changepassContainer p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: "Arimo";
+  padding-top: 15px;
+}
+.changepassContainer form {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.changepassContainer form input {
+  font-size: 14px;
+}
+.changepassContainer form button {
+  padding: 10px 25px;
+  margin-right: 25px;
+  margin-top: 20px;
+  float: right;
+  cursor: pointer;
+}
+/* --- Change Account info --- */
+.changeAccountInfoContainer {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Arimo";
+  background: rgba(0,0,0,0.7);
+  padding-top: 30px;
+  width: 80%;
+  height: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.changeAccountInfoContainer form input {
+  margin-top: 30px;
+  width: 250px;
+  height: 25px;
+}
+.changeAccountInfoContainer form button {
+  margin-top: 40px;
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+}
+/* --- New Message ---*/
+.newMessageContainer {
+  width: 80%;
+  height: 70%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: rgba(0,0,0,0.8);
+  color: #FFFFFF;
+}
+.newMessageContainer p {
+  font-size: 35px;
+  font-family: "Arimo";
+  text-align: center;
+  padding-top: 40px;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+}
+.newMessageContainer form a {
+  padding-left: 0;
+}
+.newMessageContainer form {
+  margin: 0 auto;
+  width: 40%;
+  margin-top: 100px;
+}
+.newMessageContainer form button {
+  width: 80px;
+  height: 30px;
+  float: right;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.msgTitle {
+  padding: 5px;
+  font-size: 14px;
+}
+.msgBody {
+  width: 400px;
+  height: 100px;
+}
+.messageImageContainer {
+  width: 100%;
+}
+.messageImageContainer img {
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+}
+/* --- Messages --- */
+.messagesWrapper {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  background: rgba(0,0,0,0.7);
+  color: #FFFFFF;
+  font-family: "Arimo";
+}
+.messagesWrapper h1 {
+  letter-spacing: 5px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #FFFFFF;
+}
+.messageContainer {
+  width: 80%;
+  height: auto;
+  min-height: 175px;
+  border: 8px solid #FFFFFF;
+  background-color: #999999;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 10px;
+  position: relative;
+}
+.subjectContainer {
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: #777777 solid 2px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.messageContainer p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.bodyContainer {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.linkContainer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.msglink {
+  padding: 0 10px;
+}
+/* --- Footer ---*/
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: #333333;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+.footerContainer {
+  color: #FFFFFF;
+  font-family: "Arimo";
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 100px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/* Utilities */
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.link-spanner {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
