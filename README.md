@@ -1,7 +1,7 @@
 # PHP-MySQL-Designer-Site
 Allows users to create an account in order to open a line of communication with the designer 
 
-*****    WIP    *****
+*****    **WIP**    *****
 
 This site was made for my Web Database Development class
 
@@ -21,3 +21,4 @@ I want the message system to be able to:
   * (DONE) Allow the user to delete a message
   * Send the designer a deletion email notification if the user enabled emails
 
+**This site was NOT developed for mobile devices**
